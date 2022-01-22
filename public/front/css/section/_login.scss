@@ -1,0 +1,76 @@
+.loginPage {
+    padding: 69px 0 70px;
+
+    @media #{$large-mobile} {
+        padding: 58px 0 60px;
+    }
+
+    .loginForm {
+        & h2 {
+            font-size: 28px;
+            text-transform: capitalize;
+            font-weight: bold;
+            line-height: 22px;
+            margin-bottom: 30px;
+
+            @media #{$large-mobile} {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+        }
+
+        & form {
+            border: 1px solid $grey_color;
+            padding: 23px 20px 29px;
+            border-radius: 5px;
+        }
+
+
+    
+    }
+
+    .register {
+        @media #{$large-mobile} {
+            margin-top: 57px;
+        }
+    }
+
+    .login_submit label input[type="checkbox"] {
+        width: 15px;
+        height: 13px;
+        margin-right: 3px;
+    }
+
+    .login_submit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+.select_option {
+    padding-right: 25px;
+    padding-left: 35px;
+    text-align: start !important;
+    border-radius: 0;
+
+    @media #{$desktop-device} {
+        padding-left: 28px;
+    }
+
+    &::after {
+        top: 54%;
+        left: 13px;
+
+        @media #{$tablet-device} {
+            left: 8px;
+        }
+    }
+
+    & ul.list {
+        max-height: 300px;
+        overflow: auto;
+        width: 100%;
+    }
+}

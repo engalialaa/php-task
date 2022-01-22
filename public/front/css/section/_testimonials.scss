@@ -1,0 +1,83 @@
+.testimonials {
+    padding: 30px 0;
+    margin-top: 50px;
+
+    .testimonialsHead {
+        text-align: center;
+        font-weight: bold;
+
+        margin-bottom: 50px;
+
+        i {
+            color: $secondary_color;
+            margin-left: 15px;
+        }
+    }
+    .testimonialsSlider {
+        padding: 0;
+    }
+
+    .single-item {
+        .item-comment {
+            border: .063rem solid #eeeeee;
+            background-color: #eeeeee;
+            padding: 30px 20px;
+            border-radius: .625rem;
+            position: relative;
+            min-height: 200px;
+
+            p {
+                color: #000;
+            }
+
+            &:before {
+                top: 100%;
+                left: 20%;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                margin-left: -2rem;
+                bottom: -1.25rem;
+                border-color: #eeeeee rgba(136, 183, 213, 0) rgba(194, 225, 245, 0);
+                border-style: solid;
+                border-width: 1.25rem 2.188rem 2rem 0.625rem;
+            }
+        }
+
+        .client-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 20px;
+
+            .client-img-area {
+                border: .063rem solid $secondary_color;
+                padding: .438rem;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    display: block;
+                    width: 70px;
+                    height: 70px;
+                    object-fit: cover;
+                    border-radius: 100%;
+                }
+            }
+
+            .client-details {
+                h5 {
+                    text-transform: uppercase;
+                    color: $secondary_color;
+                }
+
+                p {
+                    color: #b7b2b2;
+                }
+            }
+        }
+    }
+}

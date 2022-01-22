@@ -1,0 +1,161 @@
+.userHeader {
+    margin: 20px 0px;
+
+    .userInfo {
+        box-shadow: 0px 3px 6px #00000030;
+        padding: 20px;
+        border-radius: 20px;
+        position: relative;
+        margin: 0px 10px;
+
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 100%;
+            border: 3px solid $secondary_color;
+        }
+
+        span {
+            margin: 0px 20px;
+            font-size: 18px;
+        }
+
+        .control {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+
+            i {
+                font-size: 28px;
+                color: rgb(255, 0, 0);
+                cursor: pointer;
+            }
+
+            .switch {
+                position: relative;
+                width: 50px;
+                height: 28px;
+                margin: -3px 10px;
+
+                input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+
+                .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #ccc;
+                    transition: .4s;
+                    border-radius: 34px;
+                    margin: 0px !important;
+
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        height: 20px;
+                        width: 20px;
+                        left: 4px;
+                        bottom: 4px;
+                        background-color: white;
+                        transition: .4s;
+                        border-radius: 50%;
+                    }
+                }
+
+                input:checked+.slider {
+                    background-color: #2196F3;
+                }
+
+                input:focus+.slider {
+                    box-shadow: 0 0 1px #2196F3;
+                }
+
+                input:checked+.slider:before {
+                    transform: translateX(22px);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 760px) {
+        .container {
+            padding: 0px !important;
+        }
+
+        .userInfo {
+            padding: 20px 10px;
+
+            img {
+                width: 80px;
+                height: 80px;
+            }
+
+            span {
+                margin: 0px 10px;
+            }
+        }
+
+    }
+}
+.profileNavCol {
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    padding: 5px ;
+    height: 100%;
+
+
+    a {
+        padding: 13px;
+        display: flex;
+        align-items: center;
+        color: #777;
+        margin: 5px 1px;
+        transition: $transition;
+        background-color: $white;
+        border-radius: 10px;
+
+        i {
+            margin-left: 5px;
+        }
+
+        &.active {
+            background-color: $secondary_color;
+            color: $white;
+        }
+
+        &:hover {
+            background-color: $secondary_color;
+            color: $white;
+        }
+
+    }
+
+    @media (max-width: 760px) {
+        a {
+            padding: 8px 10px;
+            display: inline-flex;
+            margin: 3px 1px;
+            box-shadow: 0px 2px 4px 0px #00000020;
+            border-radius: 100px;
+            border-bottom: 1px solid $secondary_color;
+
+        }
+    }
+
+}
+
+
+
+.profileTitle {
+    background-color: #F8F8F8;
+    padding: 10px;
+    margin-bottom: 20px;
+}

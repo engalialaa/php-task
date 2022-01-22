@@ -1,0 +1,256 @@
+.sectionTitle {
+    padding: 20px 0px;
+    border-bottom: 1px solid #eee;
+
+    p {
+        color: $primary_color;
+        margin-bottom: 10px;
+    }
+}
+
+.addToCart {
+    padding: 7px 20px;
+    border: 1px solid #666;
+    margin: 5px 0;
+    border-radius: 100px;
+    color: #666;
+    transition: $transition;
+    text-align: center;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        color: $white;
+        background-color: $secondary_color;
+        border: 1px solid $secondary_color;
+        box-shadow: $shadow;
+    }
+}
+
+.rate {
+    display: inline-flex;
+    align-items: center;
+    margin: 5px 0;
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding: 0px;
+
+            i {
+                font-size: 12px;
+                color: #ffc62b;
+            }
+        }
+    }
+
+    span {
+        margin-right: 10px;
+    }
+}
+
+.authorImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #666;
+   
+
+    img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+        border-radius: 100px;
+
+    }
+}
+.authorSection ,
+.mostRead {
+    padding: 50px 0;
+}
+
+.specialBook {
+    background-color: #F7F7F7;
+    padding: 50px 15px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+
+    .tag {
+        color: #fff;
+        position: relative;
+        text-transform: uppercase;
+        border-radius: 0 4px 4px 0;
+        background-color: $secondary_color;
+        padding: 5px;
+
+        &:before {
+            top: 50%;
+            width: 0;
+            transform: translateY(-50%);
+            height: 20px;
+            left: -30%;
+            content: '';
+            position: absolute;
+            border-right: 5px solid $secondary_color;
+            border-top: 8px solid transparent !important;
+            border-bottom: 8px solid transparent !important;
+        }
+    }
+
+    h4 {
+        margin: 10px 0 20px;
+    }
+
+    a {
+        display: block;
+    }
+
+    .bookName {
+        color: $secondary_color;
+        font-size: 30px;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+
+    .author {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        color: #666;
+
+        img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+            border-radius: 100px;
+        }
+    }
+
+    .bookPrice {
+        padding: 5px 0;
+
+        span {
+            font-weight: bold;
+            color: $secondary_color;
+        }
+
+        del {
+            font-size: 12px;
+            color: $primary_color;
+        }
+    }
+
+    .addToCart {
+        margin-top: 30px;
+    }
+
+    .specialImg {
+        width: 100%;
+        max-height: 300px;
+        object-fit: contain;
+        transform: scale(1.6);
+
+        @media #{$large-mobile} {
+            transform: unset;
+            max-height: 200px;
+        }
+    }
+}
+
+.Counter-area {
+    padding: 50px 0;
+    position: relative;
+    min-height: 200px;
+    background-image: url(../../img/parallax/bgparallax-04.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(147, 100, 141, 0.85);
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .single-Counter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $secondary_color;
+
+            i {
+                font-size: 28px;
+                color: $white;
+            }
+        }
+
+        .Text {
+            text-align: center;
+            color: $white;
+
+            .odometer {
+                font-weight: bold;
+                font-size: 30px !important;
+            }
+
+            p {
+                font-weight: bold;
+            }
+        }
+
+        @media #{$large-mobile} {
+            display: block;
+
+            .icon {
+                margin: auto auto !important;
+            }
+        }
+    }
+}
+
+.Newest{
+    padding: 50px 0;
+    background-color: #fff5f5;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,338 @@
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+
+/*-- Google Font --*/
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Work+Sans:100,200,300,400,500,600,700,800,900&display=swap');
+
+/*-- Common Style --*/
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body{
+    line-height: 24px;
+    font-style: normal;
+    visibility: visible;
+    color: $fonts_color;
+    letter-spacing: 0.02em;
+}
+
+content{
+  min-height: 40vh;
+  display: block;
+  position: relative;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+a:hover{
+  color: $secondary_color;
+}
+
+a, button {
+    color: inherit;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+a, button, img, input, span {
+    transition: all 0.3s ease 0s;
+}
+*:focus {
+    outline: none !important;
+}
+a:focus {
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+button, input[type="submit"] {
+    cursor: pointer;
+}
+img {max-width:100%;height:auto}
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+figure{
+    padding: 0;
+    margin: 0;
+}
+.row{
+  margin: 0;
+}
+/*-- 
+    - Common Classes
+-----------------------------------------*/
+.fix {
+    overflow:hidden
+}
+.hidden {
+    display: none;
+}
+.clear{
+    clear: both;
+}
+
+.container{
+    max-width: 1170px;
+}
+@media #{$large-mobile}{
+    .container {
+        max-width: 576px;
+    }
+}
+@media #{$small-mobile}{
+    .container {
+        width: 100%;
+        padding: 0 5px;
+    }
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+
+.no-gutters > .col, .no-gutters > [class*="col-"] {
+	padding-right: 0;
+	padding-left: 0;
+    margin: 0;
+}
+
+/*-- 
+    - Background color
+-----------------------------------------*/
+.bg-white {
+    background-color: $white;
+}
+.bg-light-grey {
+    background-color: $light-grey;
+}
+
+.bg-grey {
+    background-color: #f8f8f8;
+}
+.bluewood-bg {
+    background: #354b65;
+}
+
+/*- Overlay Color BG -*/
+
+.bluewood-bg-overlay {
+    position: relative;
+    &::before {
+        background: rgba(70, 90, 112, 0.9);
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+.overly-bg-black {
+    position: relative;
+    &::after {
+        background: rgba(0, 0, 0, 0.3);
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+/*-- 
+    - color
+-----------------------------------------*/
+
+/*-- 
+    - Input Placeholder
+-----------------------------------------*/
+input:-moz-placeholder, textarea:-moz-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+/*-- 
+    Scroll Up 
+-----------------------------------------*/
+
+#scrollUp {
+	background: $secondary_color none repeat scroll 0 0;
+	bottom: 85px;
+	color: #ffffff;
+	cursor: pointer;
+	display: none;
+	font-size: 20px;
+	height: 45px;
+	line-height: 39px;
+	position: fixed;
+	right: 12px;
+	text-align: center;
+	width: 45px;
+	z-index: 9999;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	-webkit-transition: .3s;
+	transition: .3s;
+     &:hover i {
+        animation-name: fadeInUp;
+        animation-duration:1s;
+        animation-fill-mode:both;
+        animation-iteration-count: infinite;
+    }
+}
+
+/*-- 
+    - Main Wrapper
+-----------------------------------------*/
+.main-wrapper {
+    &.header-transparent {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0 ;
+
+    &:last-child{
+        margin-bottom: 0 !important;
+    }
+}
+
+
+
+
+
+
+/* Normal desktop :992px. (Laptop 14") */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* Global */
+    h1 {
+      font-size: 30px !important;
+    }
+  
+    h2 {
+      font-size: 26px !important;
+    }
+  
+    h3 {
+      font-size: 22px !important;
+    }
+  
+    h4 {
+      font-size: 20px !important;
+    }
+  
+    h5 {
+      font-size: 18px !important;
+    }
+  
+    h6 {
+      font-size: 16px !important;
+    }
+  
+    p {
+      font-size: 14px !important;
+    }
+  }
+  
+  /* Tablet device :768px. */
+  @media (min-width: 768px) and (max-width: 991px) {
+  
+    /* Global */
+    body {
+      font-size: 14px !important;
+    }
+  
+    h1 {
+      font-size: 26px !important;
+    }
+  
+    h2 {
+      font-size: 22px !important;
+    }
+  
+    h3 {
+      font-size: 20px !important;
+    }
+  
+    h4 {
+      font-size: 18px !important;
+    }
+  
+    h5 {
+      font-size: 16px !important;
+    }
+  
+    h6 {
+      font-size: 15px !important;
+    }
+  
+    p {
+      font-size: 14px !important;
+    }
+  }
+  
+  /* small mobile :320px. */
+  @media (max-width: 767px) {
+  
+    /* Global */
+    body {
+      font-size: 12px !important;
+    }
+  
+    h1 {
+      font-size: 22px !important;
+    }
+  
+    h2 {
+      font-size: 18px !important;
+    }
+  
+    h3 {
+      font-size: 16px !important;
+    }
+  
+    h4 {
+      font-size: 15px !important;
+    }
+  
+    h5 {
+      font-size: 14px !important;
+    }
+  
+    h6 {
+      font-size: 13px !important;
+    }
+  
+    p {
+      font-size: 12px !important;
+    }
+  }

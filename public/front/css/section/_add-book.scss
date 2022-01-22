@@ -1,0 +1,128 @@
+.addBook {
+    margin: 50px 0;
+    h3 {
+        font-size: 21px;
+        text-transform: capitalize;
+        font-weight: bold;
+        line-height: 20px;
+        margin-bottom: 50px;
+
+        @media #{$tablet-device} {
+            margin-bottom: 20px;
+        }
+
+        @media #{$large-mobile} {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+    label {
+        line-height: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    input {
+        border: 1px solid $grey_color;
+        min-height: 45px;
+        background: $white;
+        width: 100%;
+        padding: 0 20px;
+        color: $fonts_color2;
+    }
+
+    textarea {
+        height: 170px;
+        border: 1px solid $grey_color;
+        background: $white;
+        resize: none;
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 10px 20px;
+        color: $fonts_color;
+
+        @media #{$large-mobile} {
+            height: 120px;
+        }
+    }
+
+    button {
+        font-weight: 400;
+        height: 42px;
+        line-height: 42px;
+        padding: 0 30px;
+        text-transform: capitalize;
+        border: none;
+        background: $fonts_color;
+        color: $white;
+        cursor: pointer;
+        transition: $transition;
+        border-radius: 4px;
+
+        &:hover {
+            background: $secondary_color;
+        }
+    }
+
+    .select_option {
+        padding-right: 25px;
+        padding-left: 35px;
+        text-align: start !important;
+        border-radius: 0;
+
+        @media #{$desktop-device} {
+            padding-left: 28px;
+        }
+
+        &::after {
+            top: 54%;
+            left: 13px;
+
+            @media #{$tablet-device} {
+                left: 8px;
+            }
+        }
+
+        & ul.list {
+            max-height: 300px;
+            overflow: auto;
+            width: 100%;
+        }
+    }
+
+
+}
+
+
+
+.dropify-wrapper .dropify-message p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.dropify-font-upload:before,
+.dropify-wrapper .dropify-message span.file-icon:before {
+    content: "\f382";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 100;
+    color: #000;
+    font-size: 26px;
+}
+
+
+.termsBox{
+ display: flex;
+ align-items: center;
+    input{
+        min-height: 20px;
+        display: inline-block;
+        width: 20px;
+        
+    }
+    a{
+        padding: 10px;
+        white-space: nowrap;
+        color: $secondary_color;
+    }
+}
