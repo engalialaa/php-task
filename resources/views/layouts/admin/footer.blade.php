@@ -5,7 +5,7 @@
         <!--begin::Copyright-->
         <div class="text-dark order-2 order-md-1">
             <span class="text-muted fw-bold me-1">2021© جميع الحقوق محفوظة</span>
-            <a href="http://motaweron.com/index.html" target="_blank" class="text-gray-800 text-hover-primary">المطورون</a>
+            <a href="http://motaweron.com/index.html" target="_blank" class="text-gray-800 text-hover-primary">المهندس على علاء</a>
         </div>
         <!--end::Copyright-->
     </div>

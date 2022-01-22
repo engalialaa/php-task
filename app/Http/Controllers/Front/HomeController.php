@@ -14,6 +14,7 @@ class HomeController extends Controller
     {
         $Products = Product::where('is_shown','yes')->latest()->limit(50)->get();
         $Categories = Category::where('is_shown','yes')->latest()->limit(50)->get();
+
         return view('Front.index', compact('Products','Categories'));
     }
 

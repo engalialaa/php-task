@@ -163,7 +163,11 @@ if (auth()->user()){
                                         <span class="fal fa-shopping-cart"></span>
 
                                         <span class="item_count" id="countItems">
+                                            @if(auth()->user())
                                             {{$Carts->count()}}
+                                            @else
+                                                0
+                                            @endif
                                         </span>
                                     </a>
                                     <!--mini cart-->
