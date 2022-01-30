@@ -69,8 +69,7 @@
             </div>
         </section>
         <!-- testimonials -->
-
-
+        @if(auth()->user())
             <!-- Modal -->
             <div class="modal fade" id="chooseModal" tabindex="-1" aria-labelledby="chooseModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -88,6 +87,7 @@
                     </div>
                 </div>
             </div>
+            @endif
 
     </content>
 @endsection

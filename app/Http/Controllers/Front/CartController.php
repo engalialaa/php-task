@@ -62,6 +62,7 @@ class CartController extends Controller
             }
 
         }
+
         return response()->json(['error' => true]);
 
     }//end fun

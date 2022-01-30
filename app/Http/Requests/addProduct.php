@@ -28,7 +28,6 @@ class addProduct extends FormRequest
             'price' => 'required|numeric',
             'category_id' => 'required',
             'descount' => 'numeric',
-            'details' => 'required|string',
             'photo'     => 'required_without:id|nullable|image|mimes:jpg,jpeg,png|max:1999',
             'otherPhoto*'  => 'nullable|image|mimes:jpg,jpeg,png|max:1999',
         ];
@@ -37,7 +36,6 @@ class addProduct extends FormRequest
     {
         return [
             'name.required' => 'يرجي ادخال اسم المنتج',
-            'name.string' => ' يرجي ادخال اسم المنتج عبارة عن نص',
             'details.required' => 'يرجي ادخال تفاصيل المنتج',
             'details.string' => ' يرجي ادخال تفاصيل المنتج عبارة عن نص',
             'price.required' => ' يرجي ادخال سعر المنتج',

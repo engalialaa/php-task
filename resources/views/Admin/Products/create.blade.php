@@ -56,7 +56,7 @@
 
                         <div class="contact_textarea col-lg-12 form-group">
                             <label>تفاصيل المنتج</label>
-                            <textarea class="form-control fs-3" required   name="details" placeholder="تفاصيل المنتج" class="form-control2"></textarea>
+                            <textarea class="form-control fs-3"    name="details" placeholder="تفاصيل المنتج" class="form-control2"></textarea>
                         </div>
 
                     </div>

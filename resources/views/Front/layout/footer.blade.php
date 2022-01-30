@@ -93,12 +93,7 @@
                     }, 1200);
                 }
                 if (data.error === true) {
-
                         $('<script> toastr.info("Please login first")</' + 'script>').appendTo(document.body);
-
-                    setTimeout(function () {
-                        window.location.href = '{{route('user.login')}}'
-                    }, 2000);
                 }
             }
         });
